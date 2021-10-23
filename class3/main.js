@@ -35,6 +35,8 @@ document.write(fullName.toUpperCase());
  document.write("<br>")
  document.write(fullName.toUpperCase()); */
 
+//  --- class 3 home work ----
+
  let firstname=document.querySelector("#fname");
  
  let lastname=document.querySelector("#lname");
@@ -62,8 +64,7 @@ document.write(fullName.toUpperCase());
         return;
     }
 
-
-    function checkConfirmPassword(pass, c_pass){
+ function checkConfirmPassword(pass, c_pass){
         if(!pass.match(c_pass)){
             confirmPassword.parentElement.querySelector(".error").innerHTML = "Confirm password is not match" ; 
              return false;
