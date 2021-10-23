@@ -9,16 +9,7 @@ document.write("<br>");
 document.write(fullName.length);
 document.write("<br>");
 document.write(fullName.toUpperCase());
-
-
-
-
-
  */
-
-
-
-
 
  /* let fname= prompt("enter ur f name");
  let lname= prompt("enter ur l name");
@@ -32,7 +23,6 @@ document.write(fullName.toUpperCase());
  document.write("</br>");
  document.write(fullName.toUpperCase());
  */
-
 /* 
  let firstName = prompt("enter ur f name");
  let lastName = prompt("enter ur l name");
@@ -44,6 +34,24 @@ document.write(fullName.toUpperCase());
  document.write(fullName.length);
  document.write("<br>")
  document.write(fullName.toUpperCase()); */
+
+ let firstname=document.querySelector("#fname");
+ 
+ let lastname=document.querySelector("#lname");
+
+ let email=document.querySelector("#email");
+
+ let password=document.querySelector("#password");
+
+ let confirmPassword=document.querySelector("#cpassword");
+
+ const form = document.querySelector("form");
+ form.addEventListener("submit", save)
+
+
+
+
+
 
 
 
