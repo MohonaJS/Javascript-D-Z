@@ -48,7 +48,30 @@ document.write(fullName.toUpperCase());
  const form = document.querySelector("form");
  form.addEventListener("submit", save)
 
+ function save(event){
+    event.preventDefault();
+    let fName = firstname.value;
+    let fLame = lastname.value;
+    let fullName = fName + " " + fLame;
+    let nemail = email.value;
+    let nPassword = password.value;
+    let cPassword = confirmPassword.value;
 
+    let checkPassword = checkConfirmPassword(nPassword, cPassword);
+    if(checkPassword === false){
+        return;
+    }
+
+
+    function checkConfirmPassword(pass, c_pass){
+        if(!pass.match(c_pass)){
+            confirmPassword.parentElement.querySelector(".error").innerHTML = "Confirm password is not match" ; 
+             return false;
+
+        }
+        return true;
+    }
+}
 
 
 
