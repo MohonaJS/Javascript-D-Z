@@ -50,3 +50,11 @@ table.appendChild(newrow);
 console.log(total);
 document.querySelector("body").appendChild(table);
 
+
+
+ 
+
+ 
+
+
+
